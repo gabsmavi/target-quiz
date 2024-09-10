@@ -1,0 +1,94 @@
+1)
+def eh_fib(num):
+    a, b = 0, 1
+    while a <= n:
+        if a == n:
+            print(f"{num} é um número Fibonacci")
+        a, b = b, a + b
+    print(f"{num} não é um número Fibonacci")
+
+# Testando o código
+num1 = int(input("Digite um número: "))
+print(eh_fib(num1))
+
+
+2)
+def letra_a(texto):
+   # converter para minusculo
+   contagem = texto.lower().count('a')
+    
+    if contagem > 0:
+        print(f"A letra 'a' aparece {contagem} vezes")
+    else:
+        print(f"A letra 'a' não aparece.")
+
+texto = input("Digite um texto: ")
+print(letra_a(texto))
+
+
+3)
+
+indice = 12
+soma = 0
+K = 1
+while K < indice:
+    K = K + 1
+    soma = soma + K
+print(f'A soma final é {SOMA}')
+
+4)
+def sequencias():
+    # numeros impares consecutivos
+    a = [1, 3, 5, 7]
+    a.append(a[-1] + 2) 
+    print(f"a) {a}")
+
+    # potencias de 2
+    b = [2, 4, 8, 16, 32, 64]
+    b.append(b[-1] * 2)  
+    print(f"b) {b}")
+
+    # numeros quadrados 
+    c = [0, 1, 4, 9, 16, 25, 36]
+    c.append(len(c) ** 2)  
+    print(f"c) {c}")
+
+    # quadrados multiplos de 4 
+    d = [4, 16, 36, 64]
+    d.append((len(d) + 1) ** 2) 
+    print(f"d) {d}")
+
+    # fibonacci
+    e = [1, 1, 2, 3, 5, 8]
+    e.append(e[-1] + e[-2]) 
+    print(f"e) {e}")
+
+    # numeros consecutivos
+    f = [2, 10, 12, 16, 17, 18, 19]
+    f.append(20)  
+    print(f"f) {f}")
+
+sequencias()
+
+5)
+
+def interruptores():
+    # estado neutro
+    interruptores = ["Interruptor 1", "Interruptor 2", "Interruptor 3"]
+    lampadas = [None, None, None]  
+
+    # ligar o interruptor da lampada 1 e dedsligeu
+    lampadas[0] = "quente"  
+
+    # ligar a interruptor da lampada 2 e deixar
+    lampadas[1] = "acesa" 
+
+    # deixar o interruptor 3 desligado
+    lampadas[2] = "apagada"
+
+    print("Lâmpadas:")
+    for i in range(3):
+        print(f"{O interruptor[i]} controla a lâmpada que está {lampadas[i]}.")
+
+# Executar o código
+descobrir_interruptores()
